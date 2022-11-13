@@ -69,19 +69,20 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-        <!--Build an executable JAR-->
-        <groupId>org.apache.maven.plugins</groupId>
+        <plugin>
+   <!--Build an executable JAR-->
+   <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.1.0</version>
         <configuration>
            <archive>
              <manifest>
-                  <addClasspath>>true</addClasspath>
+                  <addClasspath>true</addClasspath>
                   <!--here we specify that we want to use the main method within the app class -->
-                  <mainClass>>jenkin.jenkinmaven.App</mainClass>
+                  <mainClass>jenkin.jenkinmaven.App</mainClass>
              </manifest>
            </archive>
-         </configuration> 
+         </configuration>
          </plugin>
       </plugins>
     </pluginManagement>
